@@ -1,11 +1,16 @@
-public class HelloWorld {
-    /**
- * This function prints hello world when called
+/**
+ * This class implements HWInterface
  */
-private static void printHelloWorld() {
-    System.out.print("Hello World!");
- }
+public class HelloWorld implements HWInterface {
+    /**
+     * This function prints hello world when called
+     */
+    public void printHelloWorld() {
+        System.out.print("Hello World!");
+    }
+
     public static void main(String[] args) {
-        printHelloWorld();
+        HelloWorld hello = new HelloWorld();
+        hello.printHelloWorld();
     }
 }
